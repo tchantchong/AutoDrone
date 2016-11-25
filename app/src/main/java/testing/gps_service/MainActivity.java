@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements CompassAssistant.
                     latitude = Double.parseDouble(intent.getExtras().get("latitude").toString());
                     longitude = Double.parseDouble(intent.getExtras().get("longitude").toString());
                     currentDegree = compassAssistant.getBearingBetweenLocations(latitude, longitude, referenceLatitude, referenceLongitude);
-                    textView.setText(String.valueOf(latitude) + " aa " + String.valueOf(longitude) + "bb" + String.valueOf(currentDegree));
+                    textView.setText("Latitude: " + String.valueOf(latitude) + "\nLongitude: " + String.valueOf(longitude) + "\nDegrees: " + String.valueOf(currentDegree));
 
 
                 }

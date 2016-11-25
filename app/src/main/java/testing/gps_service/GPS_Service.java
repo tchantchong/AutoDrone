@@ -14,6 +14,7 @@ import android.support.annotation.Nullable;
 /**
  * Created by tcheou on 10/16/2016.
  */
+@SuppressWarnings("MissingPermission")
 public class GPS_Service extends Service {
 
     private LocationListener listener;
@@ -32,7 +33,8 @@ public class GPS_Service extends Service {
                 @Override
                 public void onLocationChanged(Location location) {
                     Intent i = new Intent("location_update");
-                    i.putExtra("coordinates",location.getLongitude()+" "+location.getLatitude());
+                    i.putExtra("latitude", location.getLatitude());
+                    i.putExtra("longitude", location.getLongitude());
                     sendBroadcast(i);
                 }
 

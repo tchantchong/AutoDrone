@@ -1,0 +1,23 @@
+//Funcoes JavaScript
+
+function andarParaFrenteJS(distancia) {		//função em JavaScript que faz o drone ir para frente distancia (m)
+	mission.client().front(distancia);	// distancia em metros
+
+
+}
+
+
+
+
+function rotacionarHorarioJS(angulo) {		//função em JavaScript que faz o drone rotacionar no sentido horário angulo graus
+	mission.client().clockwise(angulo);	// angulo em graus
+
+
+}
+
+function rotacionarAntiHorarioJS(angulo) {	//função em JavaScript que faz o drone rotacionar no sentido horário angulo graus
+	mission.client().counterClockwise(angulo);	// angulo em graus
+
+
+}
+

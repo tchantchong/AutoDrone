@@ -1,0 +1,47 @@
+
+//FUNC A SEREM POSTAS NO CODIGO JAVA
+
+
+andarParaFrente(d){			//Função em Java (A QUE O KENZO VAI CHAMAR)
+	ScriptEngineManager factory = new ScriptEngineManager();
+	ScriptEngine engine = factory.getEngineByName("JavaScript");
+	engine.eval(new FileReader("andarParaFrenteJS.js");
+
+	Invocable invocable = (Invocable) engine;
+
+	invocable.invokeFunction("andarParaFrenteJS", d );
+
+
+}
+
+
+
+
+rotacionarHorario(a){			//Função em Java (A QUE O KENZO VAI CHAMAR)
+	ScriptEngineManager factory = new ScriptEngineManager();
+	ScriptEngine engine = factory.getEngineByName("JavaScript");
+	engine.eval(new FileReader("rotacionarHorarioJS.js");
+
+	Invocable invocable = (Invocable) engine;
+
+
+	invocable.invokeFunction("rotacionarHorarioJS", a );
+
+
+}
+
+
+
+
+rotacionarAntiHorario(a){			//Função em Java (A QUE O KENZO VAI CHAMAR)
+	ScriptEngineManager factory = new ScriptEngineManager();
+	ScriptEngine engine = factory.getEngineByName("JavaScript");
+	engine.eval(new FileReader("rotacionarAntiHorarioJS.js");
+
+	Invocable invocable = (Invocable) engine;
+
+
+	invocable.invokeFunction("rotacionarAntiHorarioJS", a );
+
+
+}
